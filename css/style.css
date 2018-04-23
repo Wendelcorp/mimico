@@ -72,3 +72,43 @@ body {
   font-size: 18px;
   margin-bottom: 0px;
 }
+
+.cta-button {
+  background-color: black;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.cta-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.cta-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.cta-button:hover span {
+  padding-right: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.cta-button:hover span:after {
+  color: white;
+  opacity: 1;
+  right: 0;
+  cursor: pointer;
+}
